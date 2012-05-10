@@ -24,13 +24,13 @@ end
 gem 'quiet_assets', :group => :development
 
 
-#group :deployment do
-#  gem 'capistrano'
-##  gem 'capistrano-ext'
-#  gem 'rvm-capistrano'
+group :deployment do
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'rvm-capistrano'
 #  gem 'lyberteam-devel', '>=0.7.0'
-##  gem 'net-ssh-kerberos'
-#end
+#  gem 'net-ssh-kerberos'
+end
 
 gem 'rails', '3.2.3'
 
