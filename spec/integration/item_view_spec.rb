@@ -26,7 +26,9 @@ describe("Item view", :type => :request) do
       'wooden boys', # keyword
       'Related content:', # relatedItem label
       'Online survey research site (really Project Gutenberg)', # relatedItem title applying to url
-      'Project Gutenberg citation.', # cite_related_as
+      'Project Gutenberg citation.', # regular citation
+      'http://www.stanford.edu', # another citation with a nil title element
+      'http://www.stanford.edu', # another citation with a present but empty title element
       'pinocchio.htm', # file
     ]
     login_as_archivist1

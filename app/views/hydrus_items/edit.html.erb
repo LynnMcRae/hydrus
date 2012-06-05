@@ -149,15 +149,15 @@
 <%= hidden_field_tag("field_selectors[descMetadata][relatedItem_titleInfo_title][]", "relatedItem") %>
 <%= hidden_field_tag("field_selectors[descMetadata][relatedItem_titleInfo_title][]", "titleInfo") %>
 <%= hidden_field_tag("field_selectors[descMetadata][relatedItem_titleInfo_title][]", "title") %>
-<%- related_items = @document_fedora.descMetadata.find_by_terms(:relatedItem) -%>
 <div id="related-items">
-  <%- related_items.each_with_index do |node, ix| -%>
-    <%= render :partial => "related_item", :locals => {:node=>node, :index=>ix} %>
+  <%- index=0 
+		 @document_fedora.related_items.each do |item| -%>
+    <%= render :partial => "related_item", :locals => {:item=>item, :index=>index+=1} %>
   <%- end -%>
 </div>
 <div class="row">
   <div class="span7 offset2">
-    <%= button_tag("Add another link", :name=>"add_link", :"data-attribute" => "add_link", :id=>"add_link", :class=>"btn", :value=>related_items.length) %>
+    <%= button_tag("Add another link", :name=>"add_link", :"data-attribute" => "add_link", :id=>"add_link", :class=>"btn", :value=>@document_fedora.related_items.length) %>
   </div>
 </div>
 

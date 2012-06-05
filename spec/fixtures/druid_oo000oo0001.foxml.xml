@@ -100,9 +100,29 @@
             <titleInfo>
               <title>Online survey research site (really Project Gutenberg)</title>
             </titleInfo>
-            <identifier type="uri">http://www.gutenberg.org/ebooks/500</identifier>
-            <note type="Preferred Citation">Project Gutenberg citation.</note>
+						<location>
+							<url>http://www.gutenberg.org/ebooks/500</url>
+						</location>
           </relatedItem>
+          <relatedItem type="references" displayLabel="Related content">
+						<location>
+							<url>http://www.stanford.edu</url>
+						</location>
+          </relatedItem>
+          <relatedItem type="references" displayLabel="Related content">
+            <titleInfo>
+              <title></title>
+            </titleInfo>
+						<location>
+							<url>http://searchworks.stanford.edu</url>
+						</location>
+          </relatedItem>
+					<relatedItem type="references" displayLabel="Cite related content as">
+          		<note type="Preferred Citation">Project Gutenberg citation.</note>
+					</relatedItem>
+					<relatedItem type="references" displayLabel="Cite related content as">
+          		<note type="Preferred Citation">A different citation.</note>
+					</relatedItem>
         </mods>
       </foxml:xmlContent>
     </foxml:datastreamVersion>

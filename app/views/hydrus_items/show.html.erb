@@ -60,7 +60,9 @@
     <dd><%= @document_fedora.preferred_citation %></dd>
 
     <dt>Cite related work as: </dt>
-    <dd><%= @document_fedora.cite_related_as %></dd>
+    <% @document_fedora.citations.each do |citation| %>
+      <dd><%= citation.text %></dd>
+    <% end %>
 
     <dt>Publisher: </dt>
     <dd><%= @document_fedora.publisher %></dd>

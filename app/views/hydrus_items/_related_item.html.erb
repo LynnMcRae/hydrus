@@ -1,5 +1,5 @@
-<%- title = defined?(node) ? node.at_css('titleInfo title').content : "" -%>
-<%- url = defined?(node) ? node.at_css("identifier").content : "" -%>
+<%- title = defined?(item) ? item.title : "" -%>
+<%- url = defined?(item) ? item.url : "" -%>
 <div class="destroy-set">
   <div class="row related-item">
     <%= hydrus_form_label do  %>
